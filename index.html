@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML title</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo image">
+        <nav>
+            <ul>
+                <li>First li in header nav</li>
+                <li>Second li in header nav</li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <nav>
+            <ul>
+                <li>First li in aside nav</li>
+                <li>Second li in aside nav</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <h1>H1 header</h1>
+
+        <form action="/people">
+            <label for="text-input">Text input label</label>
+            <input type="text" id="text-input">
+            <br>
+
+            <label for="text-input">Password input label</label>
+            <input type="password" id="password-input">
+            <br>
+
+            <label for="text-input">Email input label</label>
+            <input type="email" id="text-input">
+            <br>
+
+            <label for="text-input">Number input label</label>
+            <input type="number" id="text-input">
+            <br>
+
+            <button>Submit button</button>
+        </form>
+    </main>
+
+    <footer>
+        <section itemscope itemtype="http://schema.org/Organization">
+            <h1 itemprop="name">Сторіночка</h1>
+            <p>Адрес: <span itemprop="address">м.Київ, вул.Вулиця, буд.1</span></p>
+            <p>Телефон: <span itemprop="telephone">+380 (99) 999-99-99</span></p>
+            <p>Email: <span itemprop="email">info@example.com</span></p>
+        </section>
+    </footer>
+
+</body>
+</html>
