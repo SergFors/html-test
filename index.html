@@ -1,61 +1,136 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>HTML title</title>
-    <meta charset="UTF-8">
-</head>
-<body>
-    <header>
-        <img src="logo.png" alt="logo image">
-        <nav>
-            <ul>
-                <li>First li in header nav</li>
-                <li>Second li in header nav</li>
-            </ul>
-        </nav>
-    </header>
+    <head>
+        <title>HTML title</title>
+        <meta name="description" content="Page description">
+        <meta charset="UTF-8">
+        <style>
+            .bold {
+                font-weight: bold;
+            }
+            .italic {
+                font-style: italic;
+            }
+            .oblique {
+                font-style: oblique;
+            }
+            .small-caps {
+                font-variant: small-caps;
+            }
 
-    <aside>
-        <nav>
-            <ul>
-                <li>First li in aside nav</li>
-                <li>Second li in aside nav</li>
-            </ul>
-        </nav>
-    </aside>
+            .underline {
+                text-decoration: underline;
+            }
+            .text-decoration-none {
+                text-decoration: none;
+            }
+            .line-through {
+                text-decoration: line-through;
+            }
+            .overline {
+                text-decoration: overline;
+            }
 
-    <main>
-        <h1>H1 header</h1>
+            .serif {
+                font-family: serif;
+            }
+            .sans-serif {
+                font-family: sans-serif;
+            }
+            .cursive {
+                font-family: cursive;
+            }
+            .fantasy {
+                font-family: fantasy;
+            }
+            .monospace {
+                font-family: monospace;
+            }
+        </style>
+    </head>
 
-        <form action="/people">
-            <label for="text-input">Text input label</label>
-            <input type="text" id="text-input">
-            <br>
+    <body>
+        <header>
+            <img src="logo.png" alt="broken logo image">
+            <nav>
+                <ul>
+                    <li title="Tooltip for first li in header nav">First li in header nav</li>
+                    <li>Second li in header nav</li>
+                </ul>
+            </nav>
+        </header>
 
-            <label for="text-input">Password input label</label>
-            <input type="password" id="password-input">
-            <br>
+        <aside>
+            <nav>
+                <ul>
+                    <li>First li in aside nav</li>
+                    <li>Second li in aside nav</li>
+                </ul>
+            </nav>
+        </aside>
 
-            <label for="text-input">Email input label</label>
-            <input type="email" id="text-input">
-            <br>
+        <main>
+            <h1>H1 header</h1>
 
-            <label for="text-input">Number input label</label>
-            <input type="number" id="text-input">
-            <br>
+            <li>LI1 without UL</li>
+            <li>LI2 without UL</li>
 
-            <button>Submit button</button>
-        </form>
-    </main>
+            <div id="ps">
+                <p class="bold">Bold text</p>
+                <p class="italic">Italic text</p>
+                <p class="oblique">Oblique text</p>
+                <p class="small-caps">Small caps text</p>
+                <p class="underline">Underline text</p>
+                <p class="line-through">Line through text</p>
+                <p class="overline">Overline text</p>
+            </div>
 
-    <footer>
-        <section itemscope itemtype="http://schema.org/Organization">
-            <h1 itemprop="name">Сторіночка</h1>
-            <p>Адрес: <span itemprop="address">м.Київ, вул.Вулиця, буд.1</span></p>
-            <p>Телефон: <span itemprop="telephone">+380 (99) 999-99-99</span></p>
-            <p>Email: <span itemprop="email">info@example.com</span></p>
-        </section>
-    </footer>
+            <div id="fonts">
+                <p class="serif">Serif text</p>
+                <p class="sans-serif">Sans-serif text</p>
+                <p class="cursive">Cursive text</p>
+                <p class="fantasy">Fantasy text</p>
+                <p class="monospace">Monospace text</p>
+            </div>
 
-</body>
+            <p><a href="#ps">Link to the block with paragraphs</a></p>
+            <p><a href="https://google.com" class="text-decoration-none">Link without underline</a></p>
+
+            <div class="form">
+                <form action="/people">
+                    <label for="text-input">Text input label</label>
+                    <input type="text" id="text-input">
+                    <br>
+
+                    <label for="submit-input">Submit input label</label>
+                    <input type="submit" id="submit-input">
+                    <br>
+
+                    <label for="password-input">Password input label</label>
+                    <input type="password" id="password-input">
+                    <br>
+
+                    <label for="email-input">Email input label</label>
+                    <input type="email" id="email-input">
+                    <br>
+
+                    <label for="number-input">Number input label</label>
+                    <input type="number" id="number-input">
+                    <br>
+
+                    <button>Submit button</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <section itemscope itemtype="http://schema.org/Organization">
+                <h1 itemprop="name">Сторіночка</h1>
+                <p>Адрес: <span itemprop="address">м.Київ, вул.Вулиця, буд.1</span></p>
+                <p>Телефон: <span itemprop="telephone">+380 (99) 999-99-99</span></p>
+                <p>Email: <span itemprop="email">info@example.com</span></p>
+            </section>
+        </footer>
+
+    </body>
 </html>
